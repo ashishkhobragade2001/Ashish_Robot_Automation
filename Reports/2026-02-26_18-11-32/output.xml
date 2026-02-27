@@ -1,0 +1,589 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.3 on win32)" generated="2026-02-26T18:11:32.982378" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\HybridRobotFramework\Tests">
+<suite id="s1-s1" name="UI" source="C:\HybridRobotFramework\Tests\UI">
+<suite id="s1-s1-s1" name="Test Login" source="C:\HybridRobotFramework\Tests\UI\test_login.robot">
+<test id="s1-s1-s1-t1" name="Valid Login Test" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:11:33.957090" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>https://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-26T18:11:33.957090" elapsed="9.070454"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-26T18:11:43.028547" elapsed="0.236793"/>
+</kw>
+<kw name="Login With Credentials" owner="LoginPage">
+<kw name="Click Element With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:11:43.277329" elapsed="0.069956"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:11:43.348284" level="INFO">Clicking on login button</msg>
+<arg>Clicking on ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:11:43.347285" elapsed="0.000999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:11:43.349284" level="INFO">Clicking element 'xpath=//a[contains(text(), ' Signup / Login')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:11:43.348284" elapsed="9.103543"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<arg>login button</arg>
+<status status="PASS" start="2026-02-26T18:11:43.268336" elapsed="9.183491"/>
+</kw>
+<kw name="Input Text With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:11:52.453826" elapsed="0.034843"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:11:52.490668" level="INFO">Entering text into email input</msg>
+<arg>Entering text into ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:11:52.489667" elapsed="0.001001"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:11:52.491667" level="INFO">Typing text 'ashish@outlook.com' into text field 'xpath=//input[@data-qa='login-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:11:52.490668" elapsed="0.432734"/>
+</kw>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${email}</arg>
+<arg>email input</arg>
+<status status="PASS" start="2026-02-26T18:11:52.452828" elapsed="0.470574"/>
+</kw>
+<kw name="Input Text With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:11:52.925401" elapsed="0.039975"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:11:52.967374" level="INFO">Entering text into password input</msg>
+<arg>Entering text into ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:11:52.966377" elapsed="0.000997"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:11:52.968373" level="INFO">Typing text 'ashish123' into text field 'xpath=//input[@data-qa='login-password']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:11:52.967374" elapsed="0.227861"/>
+</kw>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${password}</arg>
+<arg>password input</arg>
+<status status="PASS" start="2026-02-26T18:11:52.924402" elapsed="0.270833"/>
+</kw>
+<kw name="Click Element With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:11:53.197233" elapsed="0.036979"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:11:53.235211" level="INFO">Clicking on submit button</msg>
+<arg>Clicking on ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:11:53.235211" elapsed="0.000999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:11:53.236210" level="INFO">Clicking element 'xpath=//button[@data-qa='login-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:11:53.236210" elapsed="0.182888"/>
+</kw>
+<arg>${SUBMIT_BUTTON}</arg>
+<arg>submit button</arg>
+<status status="PASS" start="2026-02-26T18:11:53.196234" elapsed="0.222864"/>
+</kw>
+<arg>ashish@outlook.com</arg>
+<arg>ashish123</arg>
+<status status="PASS" start="2026-02-26T18:11:43.267337" elapsed="10.152760"/>
+</kw>
+<kw name="Verify Login Successful" owner="LoginPage">
+<kw name="Element Should Be Visible" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:11:53.425094" elapsed="12.656721"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:06.083813" level="INFO">Verified login verification text is visible</msg>
+<arg>Verified ${element_name} is visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:06.082815" elapsed="0.000998"/>
+</kw>
+<arg>${LOGIN_VRF_TEXT}</arg>
+<arg>login verification text</arg>
+<status status="PASS" start="2026-02-26T18:11:53.424094" elapsed="12.659719"/>
+</kw>
+<status status="PASS" start="2026-02-26T18:11:53.424094" elapsed="12.659719"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-26T18:12:06.084569" elapsed="2.699105"/>
+</kw>
+<status status="PASS" start="2026-02-26T18:11:33.955092" elapsed="34.829024"/>
+</test>
+<status status="PASS" start="2026-02-26T18:11:33.170263" elapsed="35.616167"/>
+</suite>
+<suite id="s1-s1-s2" name="Test Registration" source="C:\HybridRobotFramework\Tests\UI\test_registration.robot">
+<kw name="Open Browser To Application" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:08.825446" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-26T18:12:08.824450" elapsed="4.218992"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-26T18:12:13.043442" elapsed="9.135438"/>
+</kw>
+<status status="PASS" start="2026-02-26T18:12:08.822447" elapsed="13.357434"/>
+</kw>
+<test id="s1-s1-s2-t1" name="Valid User Registration Test" line="23">
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2026-02-26T18:12:22.184877" level="INFO">${random} = 9613</msg>
+<var>${random}</var>
+<arg>random.randint(1000,9999)</arg>
+<arg>modules=random</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2026-02-26T18:12:22.182877" elapsed="0.002000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2026-02-26T18:12:22.208864" level="INFO">${email} = testuser9613@mail.com</msg>
+<var>${email}</var>
+<arg>testuser${random}@mail.com</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2026-02-26T18:12:22.205863" elapsed="0.003001"/>
+</kw>
+<kw name="Open Signup Page" owner="RegistrationPage">
+<kw name="Click Element With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:12:22.217856" elapsed="0.083948"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:22.303802" level="INFO">Clicking on signup/login tab</msg>
+<arg>Clicking on ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:22.302805" elapsed="0.000997"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:22.304802" level="INFO">Clicking element 'xpath=//li[contains(., ' Signup / Login')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:22.304802" elapsed="2.381728"/>
+</kw>
+<arg>${SIGNIN_TAB}</arg>
+<arg>signup/login tab</arg>
+<status status="PASS" start="2026-02-26T18:12:22.214861" elapsed="2.471669"/>
+</kw>
+<status status="PASS" start="2026-02-26T18:12:22.209864" elapsed="2.476666"/>
+</kw>
+<kw name="Start New User Registration" owner="RegistrationPage">
+<kw name="Input Text With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:12:24.690529" elapsed="0.042971"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:24.734499" level="INFO">Entering text into username input</msg>
+<arg>Entering text into ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:24.733500" elapsed="0.001999"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:24.736498" level="INFO">Typing text 'TestUser' into text field 'xpath=//input[@data-qa='signup-name']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:24.735499" elapsed="0.183887"/>
+</kw>
+<arg>${USERNAME_INPUT}</arg>
+<arg>${username}</arg>
+<arg>username input</arg>
+<status status="PASS" start="2026-02-26T18:12:24.689534" elapsed="0.230851"/>
+</kw>
+<kw name="Input Text With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:12:24.921384" elapsed="0.032981"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:24.956367" level="INFO">Entering text into email input</msg>
+<arg>Entering text into ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:24.954365" elapsed="0.002002"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:24.959362" level="INFO">Typing text 'testuser9613@mail.com' into text field 'xpath=//input[@data-qa='signup-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:24.957370" elapsed="0.376762"/>
+</kw>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${email}</arg>
+<arg>email input</arg>
+<status status="PASS" start="2026-02-26T18:12:24.920385" elapsed="0.414746"/>
+</kw>
+<kw name="Click Element With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:12:25.336130" elapsed="0.036978"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:25.374106" level="INFO">Clicking on signup button</msg>
+<arg>Clicking on ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:25.373108" elapsed="0.000998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:25.375106" level="INFO">Clicking element 'xpath=//button[@data-qa='signup-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:25.374106" elapsed="5.109238"/>
+</kw>
+<arg>${SIGN_UP_BUTTON}</arg>
+<arg>signup button</arg>
+<status status="PASS" start="2026-02-26T18:12:25.335131" elapsed="5.148213"/>
+</kw>
+<arg>${USERNAME}</arg>
+<arg>${email}</arg>
+<status status="PASS" start="2026-02-26T18:12:24.687528" elapsed="5.795816"/>
+</kw>
+<kw name="Fill Account Information" owner="RegistrationPage">
+<kw name="Element Should Be Visible" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:12:30.487338" elapsed="0.038978"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:30.527314" level="INFO">Verified account information text is visible</msg>
+<arg>Verified ${element_name} is visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:30.527314" elapsed="0.000000"/>
+</kw>
+<arg>${ACCOUNT_CREATE_MESSAGE_TEXT}</arg>
+<arg>account information text</arg>
+<status status="PASS" start="2026-02-26T18:12:30.486337" elapsed="0.040977"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:30.528311" level="INFO">Clicking element 'id=id_gender1'.</msg>
+<arg>${MR_TITLE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:30.528311" elapsed="0.139916"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:30.669226" level="INFO">Typing text 'Test@123' into text field 'id=password'.</msg>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:30.669226" elapsed="0.333795"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:31.005020" level="INFO">Selecting options from selection list 'id=days' by value 10.</msg>
+<arg>${DAY_DROPDOWN}</arg>
+<arg>${day}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-02-26T18:12:31.004020" elapsed="0.159904"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:31.165922" level="INFO">Selecting options from selection list 'id=months' by value 5.</msg>
+<arg>${MONTH_DROPDOWN}</arg>
+<arg>${month}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-02-26T18:12:31.164923" elapsed="0.165896"/>
+</kw>
+<kw name="Select From List By Value" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:31.331818" level="INFO">Selecting options from selection list 'id=years' by value 1995.</msg>
+<arg>${YEAR_DROPDOWN}</arg>
+<arg>${year}</arg>
+<doc>Selects options from selection list ``locator`` by ``values``.</doc>
+<status status="PASS" start="2026-02-26T18:12:31.331818" elapsed="0.134918"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:31.467734" level="INFO">Clicking element 'id=newsletter'.</msg>
+<arg>${NEWSLETTER_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:31.466736" elapsed="0.186887"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:31.654620" level="INFO">Clicking element 'xpath=//input[@id='optin']'.</msg>
+<arg>${SPECIAL_OFFER_CHECKBOX}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:31.653623" elapsed="0.202874"/>
+</kw>
+<arg>${PASSWORD}</arg>
+<arg>10</arg>
+<arg>5</arg>
+<arg>1995</arg>
+<status status="PASS" start="2026-02-26T18:12:30.485339" elapsed="1.371158"/>
+</kw>
+<kw name="Fill Address Information" owner="RegistrationPage">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:31.861493" level="INFO">Typing text 'John' into text field 'id=first_name'.</msg>
+<arg>${FIRST_NAME_INPUT}</arg>
+<arg>${first}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:31.860493" elapsed="0.182888"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:32.044379" level="INFO">Typing text 'Doe' into text field 'id=last_name'.</msg>
+<arg>${LAST_NAME_INPUT}</arg>
+<arg>${last}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:32.043381" elapsed="0.267835"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:32.313217" level="INFO">Typing text 'ABC Pvt Ltd' into text field 'id=company'.</msg>
+<arg>${COMPANY_INPUT}</arg>
+<arg>${company}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:32.312216" elapsed="0.269835"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:32.583048" level="INFO">Typing text 'Delhi Street' into text field 'xpath=(//input[@type='text'])[6]'.</msg>
+<arg>${ADDRESS_1_INPUT}</arg>
+<arg>${address1}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:32.583048" elapsed="0.351786"/>
+</kw>
+<kw name="Select From List By Label" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:32.936832" level="INFO">Selecting options from selection list 'id=country' by label India.</msg>
+<arg>${COUNTRY_DROPDOWN}</arg>
+<arg>India</arg>
+<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
+<status status="PASS" start="2026-02-26T18:12:32.935834" elapsed="0.190881"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:33.128713" level="INFO">Typing text 'Delhi' into text field 'id=state'.</msg>
+<arg>${STATE_INPUT}</arg>
+<arg>${state}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:33.127714" elapsed="0.240852"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:33.370567" level="INFO">Typing text 'Delhi' into text field 'id=city'.</msg>
+<arg>${CITY_INPUT}</arg>
+<arg>${city}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:33.369566" elapsed="0.363776"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:33.734341" level="INFO">Typing text '110001' into text field 'id=zipcode'.</msg>
+<arg>${ZIPCODE_INPUT}</arg>
+<arg>${zipcode}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:33.733342" elapsed="0.215868"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:33.950210" level="INFO">Typing text '9999999999' into text field 'id=mobile_number'.</msg>
+<arg>${MOBILE_NUMBER_INPUT}</arg>
+<arg>${mobile}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:33.950210" elapsed="0.192881"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:34.144089" level="INFO">Clicking element 'xpath=/html/body/section/div/div/div/div/form/button'.</msg>
+<arg>${CREATE_ACCOUNT_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:34.144089" elapsed="6.848451"/>
+</kw>
+<arg>John</arg>
+<arg>Doe</arg>
+<arg>ABC Pvt Ltd</arg>
+<arg>Delhi Street</arg>
+<arg>Delhi</arg>
+<arg>Delhi</arg>
+<arg>110001</arg>
+<arg>9999999999</arg>
+<status status="PASS" start="2026-02-26T18:12:31.858494" elapsed="9.135047"/>
+</kw>
+<kw name="Verify Account Created" owner="RegistrationPage">
+<kw name="Element Should Be Visible" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T18:12:40.995542" elapsed="0.053212"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T18:12:41.050758" level="INFO">Verified account created message is visible</msg>
+<arg>Verified ${element_name} is visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T18:12:41.048754" elapsed="0.002004"/>
+</kw>
+<arg>${SUCCESS_CREATE_MESSAGE}</arg>
+<arg>account created message</arg>
+<status status="PASS" start="2026-02-26T18:12:40.995542" elapsed="0.056212"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:41.051754" level="INFO">Clicking element 'xpath=//a[@class='btn btn-primary']'.</msg>
+<arg>${CONTINUE_BUTTON}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T18:12:41.051754" elapsed="0.156861"/>
+</kw>
+<status status="PASS" start="2026-02-26T18:12:40.994539" elapsed="0.214076"/>
+</kw>
+<kw name="Logout User" owner="RegistrationPage">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T18:12:41.212612" level="INFO">Clicking element 'xpath=/html/body/header/div/div/div/div[2]/div/ul/li[4]/a'.</msg>
+<msg time="2026-02-26T18:12:43.174582" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2026-02-26T18:12:43.175582" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/login"&gt;...&lt;/a&gt; is not clickable at point (839, 40). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260224/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=4&amp;amp;uci=a!4" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfUmKSX95IDFXhDwgUdjFw5MA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.117); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#elementclickinterceptedexception
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff7e3f2aa55
+	0x7ff7e3c88630
+	0x7ff7e3a1d75d
+	0x7ff7e3a80b65
+	0x7ff7e3a7e27a
+	0x7ff7e3a7b115
+	0x7ff7e3a79fc7
+	0x7ff7e3a6b426
+	0x7ff7e3aa19da
+	0x7ff7e3a6aca6
+	0x7ff7e3ac591c
+	0x7ff7e3a69098
+	0x7ff7e3a69f83
+	0x7ff7e3f57810
+	0x7ff7e3f51afd
+	0x7ff7e3f72c1a
+	0x7ff7e3ca3345
+	0x7ff7e3cab81c
+	0x7ff7e3c91924
+	0x7ff7e3c91ad6
+	0x7ff7e3c77e47
+	0x7ffd5fad7034
+	0x7ffd61ac2651
+</msg>
+<arg>${LOGOUT_TAB}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2026-02-26T18:12:41.211614" elapsed="1.973961">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/login"&gt;...&lt;/a&gt; is not clickable at point (839, 40). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260224/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=4&amp;amp;uci=a!4" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfUmKSX95IDFXhDwgUdjFw5MA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.117); For documentation on this error, p...
+    [ Message content over the limit has been removed. ]
+	0x7ff7e3a80b65
+	0x7ff7e3a7e27a
+	0x7ff7e3a7b115
+	0x7ff7e3a79fc7
+	0x7ff7e3a6b426
+	0x7ff7e3aa19da
+	0x7ff7e3a6aca6
+	0x7ff7e3ac591c
+	0x7ff7e3a69098
+	0x7ff7e3a69f83
+	0x7ff7e3f57810
+	0x7ff7e3f51afd
+	0x7ff7e3f72c1a
+	0x7ff7e3ca3345
+	0x7ff7e3cab81c
+	0x7ff7e3c91924
+	0x7ff7e3c91ad6
+	0x7ff7e3c77e47
+	0x7ffd5fad7034
+	0x7ffd61ac2651</status>
+</kw>
+<status status="FAIL" start="2026-02-26T18:12:41.210614" elapsed="1.974961">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/login"&gt;...&lt;/a&gt; is not clickable at point (839, 40). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260224/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=4&amp;amp;uci=a!4" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfUmKSX95IDFXhDwgUdjFw5MA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.117); For documentation on this error, p...
+    [ Message content over the limit has been removed. ]
+	0x7ff7e3a80b65
+	0x7ff7e3a7e27a
+	0x7ff7e3a7b115
+	0x7ff7e3a79fc7
+	0x7ff7e3a6b426
+	0x7ff7e3aa19da
+	0x7ff7e3a6aca6
+	0x7ff7e3ac591c
+	0x7ff7e3a69098
+	0x7ff7e3a69f83
+	0x7ff7e3f57810
+	0x7ff7e3f51afd
+	0x7ff7e3f72c1a
+	0x7ff7e3ca3345
+	0x7ff7e3cab81c
+	0x7ff7e3c91924
+	0x7ff7e3c91ad6
+	0x7ff7e3c77e47
+	0x7ffd5fad7034
+	0x7ffd61ac2651</status>
+</kw>
+<status status="FAIL" start="2026-02-26T18:12:22.179881" elapsed="21.006693">ElementClickInterceptedException: Message: element click intercepted: Element &lt;a href="/login"&gt;...&lt;/a&gt; is not clickable at point (839, 40). Other element would receive the click: &lt;iframe id="aswift_3" name="aswift_3" style="min-height: auto !important; max-height: none !important; min-width: auto !important; max-width: none !important; width: 100vw !important; height: 100vh !important; inset: 0px auto auto 0px !important; position: absolute !important; clear: none !important; display: inline !important; float: none !important; margin: 0px !important; opacity: 1 !important; overflow: visible !important; padding: 0px !important; vertical-align: baseline !important; visibility: visible !important; z-index: auto !important;" sandbox="allow-forms allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation" width="" height="" frameborder="0" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allow="attribution-reporting; run-ad-auction" src="https://googleads.g.doubleclick.net/pagead/html/r20260224/r20190131/zrt_lookup_fy2021.html#RS-0-&amp;amp;adk=1812271808&amp;amp;client=ca-pub-1677597403311019&amp;amp;fa=8&amp;amp;ifi=4&amp;amp;uci=a!4" data-google-container-id="a!4" tabindex="0" title="Advertisement" aria-label="Advertisement" data-google-query-id="CJfUmKSX95IDFXhDwgUdjFw5MA" data-load-complete="true"&gt;&lt;/iframe&gt;
+  (Session info: chrome=145.0.7632.117); For documentation on this error, p...
+    [ Message content over the limit has been removed. ]
+	0x7ff7e3a80b65
+	0x7ff7e3a7e27a
+	0x7ff7e3a7b115
+	0x7ff7e3a79fc7
+	0x7ff7e3a6b426
+	0x7ff7e3aa19da
+	0x7ff7e3a6aca6
+	0x7ff7e3ac591c
+	0x7ff7e3a69098
+	0x7ff7e3a69f83
+	0x7ff7e3f57810
+	0x7ff7e3f51afd
+	0x7ff7e3f72c1a
+	0x7ff7e3ca3345
+	0x7ff7e3cab81c
+	0x7ff7e3c91924
+	0x7ff7e3c91ad6
+	0x7ff7e3c77e47
+	0x7ffd5fad7034
+	0x7ffd61ac2651</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-26T18:12:43.194570" elapsed="2.918458"/>
+</kw>
+<status status="FAIL" start="2026-02-26T18:12:08.788465" elapsed="37.324563"/>
+</suite>
+<status status="FAIL" start="2026-02-26T18:11:33.162266" elapsed="72.958754"/>
+</suite>
+<status status="FAIL" start="2026-02-26T18:11:32.987376" elapsed="73.141640"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="1" skip="0">Tests</stat>
+<stat name="UI" id="s1-s1" pass="1" fail="1" skip="0">Tests.UI</stat>
+<stat name="Test Login" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.UI.Test Login</stat>
+<stat name="Test Registration" id="s1-s1-s2" pass="0" fail="1" skip="0">Tests.UI.Test Registration</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

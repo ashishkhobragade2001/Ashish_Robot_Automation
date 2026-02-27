@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.4.1 (Python 3.12.3 on win32)" generated="2026-02-26T16:57:14.586455" rpa="false" schemaversion="5">
+<suite id="s1" name="Tests" source="C:\HybridRobotFramework\Tests">
+<suite id="s1-s1" name="UI" source="C:\HybridRobotFramework\Tests\UI">
+<suite id="s1-s1-s1" name="Test Login" source="C:\HybridRobotFramework\Tests\UI\test_login.robot">
+<test id="s1-s1-s1-t1" name="Valid Login Test" line="8">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:57:16.578230" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
+<arg>https://automationexercise.com</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2026-02-26T16:57:16.576230" elapsed="103.371621"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2026-02-26T16:58:59.951849" elapsed="0.218867"/>
+</kw>
+<kw name="Login With Credentials" owner="LoginPage">
+<kw name="Click Element With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T16:59:00.189710" elapsed="0.074945"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T16:59:00.267653" level="INFO">Clicking on login button</msg>
+<arg>Clicking on ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T16:59:00.264655" elapsed="0.003998"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:59:00.268653" level="INFO">Clicking element 'xpath=//a[contains(text(), ' Signup / Login')]'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:59:00.268653" elapsed="1.839185"/>
+</kw>
+<arg>${LOGIN_BUTTON}</arg>
+<arg>login button</arg>
+<status status="PASS" start="2026-02-26T16:59:00.187705" elapsed="1.921133"/>
+</kw>
+<kw name="Input Text With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T16:59:02.110835" elapsed="0.076955"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T16:59:02.189788" level="INFO">Entering text into email input</msg>
+<arg>Entering text into ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T16:59:02.187790" elapsed="0.001998"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:59:02.190788" level="INFO">Typing text 'ashish@outlook.com' into text field 'xpath=//input[@data-qa='login-email']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:59:02.189788" elapsed="3.871618"/>
+</kw>
+<arg>${EMAIL_INPUT}</arg>
+<arg>${email}</arg>
+<arg>email input</arg>
+<status status="PASS" start="2026-02-26T16:59:02.109837" elapsed="3.951569"/>
+</kw>
+<kw name="Input Text With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T16:59:06.064404" elapsed="0.077954"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T16:59:06.144357" level="INFO">Entering text into password input</msg>
+<arg>Entering text into ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T16:59:06.143357" elapsed="0.001000"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:59:06.145354" level="INFO">Typing text 'ashish123' into text field 'xpath=//input[@data-qa='login-password']'.</msg>
+<arg>${locator}</arg>
+<arg>${text}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:59:06.144357" elapsed="0.365776"/>
+</kw>
+<arg>${PASSWORD_INPUT}</arg>
+<arg>${password}</arg>
+<arg>password input</arg>
+<status status="PASS" start="2026-02-26T16:59:06.062405" elapsed="0.447728"/>
+</kw>
+<kw name="Click Element With Log" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T16:59:06.512129" elapsed="0.043972"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T16:59:06.558099" level="INFO">Clicking on submit button</msg>
+<arg>Clicking on ${element_name}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T16:59:06.557100" elapsed="0.000999"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2026-02-26T16:59:06.559099" level="INFO">Clicking element 'xpath=//button[@data-qa='login-button']'.</msg>
+<arg>${locator}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2026-02-26T16:59:06.558099" elapsed="3.763687"/>
+</kw>
+<arg>${SUBMIT_BUTTON}</arg>
+<arg>submit button</arg>
+<status status="PASS" start="2026-02-26T16:59:06.511129" elapsed="3.811655"/>
+</kw>
+<arg>ashish@outlook.com</arg>
+<arg>ashish123</arg>
+<status status="PASS" start="2026-02-26T16:59:00.177709" elapsed="10.145075"/>
+</kw>
+<kw name="Verify Login Successful" owner="LoginPage">
+<kw name="Element Should Be Visible" owner="BasePage">
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${locator}</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2026-02-26T16:59:10.327781" elapsed="1.766077"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2026-02-26T16:59:12.095858" level="INFO">Verified login verification text is visible</msg>
+<arg>Verified ${element_name} is visible</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2026-02-26T16:59:12.094857" elapsed="0.001001"/>
+</kw>
+<arg>${LOGIN_VRF_TEXT}</arg>
+<arg>login verification text</arg>
+<status status="PASS" start="2026-02-26T16:59:10.326783" elapsed="1.769075"/>
+</kw>
+<status status="PASS" start="2026-02-26T16:59:10.325782" elapsed="1.771075"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2026-02-26T16:59:12.096857" elapsed="3.378970"/>
+</kw>
+<status status="PASS" start="2026-02-26T16:57:16.570236" elapsed="118.908764"/>
+</test>
+<status status="PASS" start="2026-02-26T16:57:15.348988" elapsed="120.144230"/>
+</suite>
+<status status="PASS" start="2026-02-26T16:57:15.335994" elapsed="120.169210"/>
+</suite>
+<status status="PASS" start="2026-02-26T16:57:14.635425" elapsed="120.876780"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tests" id="s1" pass="1" fail="0" skip="0">Tests</stat>
+<stat name="UI" id="s1-s1" pass="1" fail="0" skip="0">Tests.UI</stat>
+<stat name="Test Login" id="s1-s1-s1" pass="1" fail="0" skip="0">Tests.UI.Test Login</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
