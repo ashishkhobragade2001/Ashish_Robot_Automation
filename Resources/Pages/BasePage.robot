@@ -19,3 +19,8 @@ Element Should Be Visible
     [Arguments]    ${locator}    ${element_name}
     Wait Until Element Is Visible    ${locator}    10s
     Log    Verified ${element_name} is visible
+
+Wait Until Element Visible
+    [Arguments]    ${locator}    ${element_name}
+    Wait Until Element Visible    ${locator}    element_name=${element_name}
+    Log    waited element: ${element_name}    10s

@@ -1,174 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.4.1 (Python 3.12.3 on win32)" generated="2026-02-27T18:20:09.268497" rpa="false" schemaversion="5">
+<robot generator="Robot 7.4.1 (Python 3.12.3 on win32)" generated="2026-02-28T11:06:03.461585" rpa="false" schemaversion="5">
 <suite id="s1" name="HybridRobotFramework" source="C:\HybridRobotFramework">
 <suite id="s1-s1" name="Tests" source="C:\HybridRobotFramework\Tests">
 <suite id="s1-s1-s1" name="UI" source="C:\HybridRobotFramework\Tests\UI">
-<suite id="s1-s1-s1-s1" name="Test Login" source="C:\HybridRobotFramework\Tests\UI\test_login.robot">
-<test id="s1-s1-s1-s1-t1" name="Valid Login Test" line="7">
-<kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2026-02-27T18:20:10.264883" level="INFO">Opening browser 'chrome' to base url 'https://automationexercise.com'.</msg>
-<arg>https://automationexercise.com</arg>
-<arg>chrome</arg>
-<doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2026-02-27T18:20:10.262885" elapsed="32.734851"/>
-</kw>
-<kw name="Maximize Browser Window" owner="SeleniumLibrary">
-<msg time="2026-02-27T18:20:43.140649" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=145.0.7632.117)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6f53baa55
-	0x7ff6f5118630
-	0x7ff6f4ead75d
-	0x7ff6f4e842a2
-	0x7ff6f4f38e86
-	0x7ff6f4f55282
-	0x7ff6f4ef9098
-	0x7ff6f4ef9f83
-	0x7ff6f53e7810
-	0x7ff6f53e1afd
-	0x7ff6f5402c1a
-	0x7ff6f5133345
-	0x7ff6f513b81c
-	0x7ff6f5121924
-	0x7ff6f5121ad6
-	0x7ff6f5107e47
-	0x7ffdb1f97034
-	0x7ffdb37a2651
-</msg>
-<msg time="2026-02-27T18:20:43.273565" level="FAIL">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=145.0.7632.117)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6f53baa55
-	0x7ff6f5118630
-	0x7ff6f4ead75d
-	0x7ff6f4e842a2
-	0x7ff6f4f38e86
-	0x7ff6f4f55282
-	0x7ff6f4ef9098
-	0x7ff6f4ef9f83
-	0x7ff6f53e7810
-	0x7ff6f53e1afd
-	0x7ff6f5402c1a
-	0x7ff6f5133345
-	0x7ff6f513b81c
-	0x7ff6f5121924
-	0x7ff6f5121ad6
-	0x7ff6f5107e47
-	0x7ffdb1f97034
-	0x7ffdb37a2651
-</msg>
-<doc>Maximizes current browser window.</doc>
-<status status="FAIL" start="2026-02-27T18:20:43.055701" elapsed="0.268833">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=145.0.7632.117)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6f53baa55
-	0x7ff6f5118630
-	0x7ff6f4ead75d
-	0x7ff6f4e842a2
-	0x7ff6f4f38e86
-	0x7ff6f4f55282
-	0x7ff6f4ef9098
-	0x7ff6f4ef9f83
-	0x7ff6f53e7810
-	0x7ff6f53e1afd
-	0x7ff6f5402c1a
-	0x7ff6f5133345
-	0x7ff6f513b81c
-	0x7ff6f5121924
-	0x7ff6f5121ad6
-	0x7ff6f5107e47
-	0x7ffdb1f97034
-	0x7ffdb37a2651
-</status>
-</kw>
-<kw name="Login With Credentials" owner="LoginPage">
-<arg>test@example.com</arg>
-<arg>test123</arg>
-<status status="NOT RUN" start="2026-02-27T18:20:43.337528" elapsed="0.000997"/>
-</kw>
-<kw name="Verify Login Successful" owner="LoginPage">
-<status status="NOT RUN" start="2026-02-27T18:20:43.339525" elapsed="0.000000"/>
-</kw>
-<kw name="Close Browser" owner="SeleniumLibrary">
-<doc>Closes the current browser.</doc>
-<status status="NOT RUN" start="2026-02-27T18:20:43.353516" elapsed="0.001000"/>
-</kw>
-<status status="FAIL" start="2026-02-27T18:20:10.217910" elapsed="33.137605">NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=145.0.7632.117)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6f53baa55
-	0x7ff6f5118630
-	0x7ff6f4ead75d
-	0x7ff6f4e842a2
-	0x7ff6f4f38e86
-	0x7ff6f4f55282
-	0x7ff6f4ef9098
-	0x7ff6f4ef9f83
-	0x7ff6f53e7810
-	0x7ff6f53e1afd
-	0x7ff6f5402c1a
-	0x7ff6f5133345
-	0x7ff6f513b81c
-	0x7ff6f5121924
-	0x7ff6f5121ad6
-	0x7ff6f5107e47
-	0x7ffdb1f97034
-	0x7ffdb37a2651
-</status>
+<suite id="s1-s1-s1-s1" name="Test Login Ddt" source="C:\HybridRobotFramework\Tests\UI\test_login_ddt.robot">
+<test id="s1-s1-s1-s1-t1" name="Login Ddt Test" line="7">
+<tag>ddt</tag>
+<status status="FAIL" start="2026-02-28T11:06:04.171128" elapsed="0.023985">Test cannot be empty.</status>
 </test>
-<status status="FAIL" start="2026-02-27T18:20:09.528341" elapsed="33.865150"/>
+<status status="FAIL" start="2026-02-28T11:06:03.621486" elapsed="0.601610"/>
 </suite>
-<status status="FAIL" start="2026-02-27T18:20:09.485362" elapsed="34.001075"/>
+<status status="FAIL" start="2026-02-28T11:06:03.593505" elapsed="0.691553"/>
 </suite>
-<status status="FAIL" start="2026-02-27T18:20:09.445387" elapsed="34.163971"/>
+<status status="FAIL" start="2026-02-28T11:06:03.554527" elapsed="0.767508"/>
 </suite>
-<status status="FAIL" start="2026-02-27T18:20:09.315467" elapsed="34.336865"/>
+<status status="FAIL" start="2026-02-28T11:06:03.476575" elapsed="0.883435"/>
 </suite>
 <statistics>
 <total>
 <stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">ddt</stat>
 </tag>
 <suite>
 <stat name="HybridRobotFramework" id="s1" pass="0" fail="1" skip="0">HybridRobotFramework</stat>
 <stat name="Tests" id="s1-s1" pass="0" fail="1" skip="0">HybridRobotFramework.Tests</stat>
 <stat name="UI" id="s1-s1-s1" pass="0" fail="1" skip="0">HybridRobotFramework.Tests.UI</stat>
-<stat name="Test Login" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">HybridRobotFramework.Tests.UI.Test Login</stat>
+<stat name="Test Login Ddt" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">HybridRobotFramework.Tests.UI.Test Login Ddt</stat>
 </suite>
 </statistics>
 <errors>
-<msg time="2026-02-27T18:20:43.140649" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=145.0.7632.117)
-Stacktrace:
-Symbols not available. Dumping unresolved backtrace:
-	0x7ff6f53baa55
-	0x7ff6f5118630
-	0x7ff6f4ead75d
-	0x7ff6f4e842a2
-	0x7ff6f4f38e86
-	0x7ff6f4f55282
-	0x7ff6f4ef9098
-	0x7ff6f4ef9f83
-	0x7ff6f53e7810
-	0x7ff6f53e1afd
-	0x7ff6f5402c1a
-	0x7ff6f5133345
-	0x7ff6f513b81c
-	0x7ff6f5121924
-	0x7ff6f5121ad6
-	0x7ff6f5107e47
-	0x7ffdb1f97034
-	0x7ffdb37a2651
-</msg>
+<msg time="2026-02-28T11:06:04.109515" level="ERROR">[ DataDriver ] Error in robot file:
+  File "C:\HybridRobotFramework\Tests\UI\test_login_ddt.robot", line 0</msg>
+<msg time="2026-02-28T11:06:04.117159" level="ERROR">In source file:
+  File "../TestData/login_data.xlsx", line 0</msg>
+<msg time="2026-02-28T11:06:04.131155" level="ERROR">Calling method '_start_suite' of listener 'DataDriver' failed: FileNotFoundError: File attribute was not a full path. Tried to find C:\HybridRobotFramework\Tests\UI\..\TestData\login_data.xlsx but file does not exist.</msg>
 </errors>
 </robot>
